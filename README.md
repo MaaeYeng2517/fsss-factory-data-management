@@ -21,7 +21,24 @@
 
 ## ไดอะแกรมการทำงาน
 
-Sales Order → Planning/MRP → Purchase Order → Receive → QC → Release to Inventory → Scheduling → Work Order → Issue Materials → Routing → Output/Scrap → Final QC → FG Warehouse → Delivery → Finance/Costing → Analytics
+```mermaid
+flowchart LR
+  SO[Sales Order] --> PLAN[Planning/MRP]
+  PLAN --> PO[Purchase Order]
+  PO --> RECV[Receive]
+  RECV --> QC[QC]
+  QC --> INV[Release to Inventory]
+  INV --> SCHED[Scheduling]
+  SCHED --> WO[Work Order]
+  WO --> ISSUE[Issue Materials]
+  ISSUE --> ROUTE[Routing]
+  ROUTE --> OUT[Output/Scrap]
+  OUT --> FQC[Final QC]
+  FQC --> FG[FG Warehouse]
+  FG --> DEL[Delivery]
+  DEL --> FIN[Finance/Costing]
+  FIN --> AN[Analytics]
+```
 
 
 FSSS — Factory Management System
