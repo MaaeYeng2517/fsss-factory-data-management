@@ -1,6 +1,6 @@
-# FSSS — Raw Material Management System
+# FSSS — Factory Management System
 
-ระบบจัดการสารดิบ (Raw Material Management System) สำหรับองค์กรอุตสาห Fitzgerald
+
 
 ## เทคโนโลยีที่ใช้
 
