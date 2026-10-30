@@ -1100,3 +1100,14 @@ model InternalAudit {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model QaEntry {
+  id          String   @id @default(cuid())
+  questionId  String
+  answerId    String
+  answer      String
+  sources     Json
+  status      String   @default("verified")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

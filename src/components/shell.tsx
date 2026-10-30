@@ -6,7 +6,7 @@ const links = [
   { href: '/', label: 'แดชบอร์ด' }, { href: '/master-data', label: 'Master Data' }, { href: '/procurement', label: 'จัดซื้อ' },
   { href: '/production', label: 'การผลิต' }, { href: '/warehouse', label: 'คลัง' }, { href: '/quality', label: 'คุณภาพ' },
   { href: '/maintenance', label: 'ซ่อมบำรุง' }, { href: '/employees', label: 'พนักงาน' }, { href: '/internal-audits', label: 'ตรวจสอบภายใน' },
-  { href: '/approvals', label: 'อนุมัติ' }, { href: '/sales-reps', label: 'ผู้แทนขาย' }, { href: '/financial-reports', label: 'รายงานการเงิน' },
+  { href: '/approvals', label: 'อนุมัติ' }, { href: '/qa-entries', label: 'Q&A' }, { href: '/sales-reps', label: 'ผู้แทนขาย' }, { href: '/financial-reports', label: 'รายงานการเงิน' },
 ];
 
 export default function Shell({ children }: { children: React.ReactNode }) {
