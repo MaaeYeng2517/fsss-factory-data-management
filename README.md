@@ -1,4 +1,30 @@
-# FSSS — Factory Management System
+# fsss-factory-data-management
+
+## สรุปฟีเจอร์
+
+| โมดูล | ฟีเจอร์ | สถานะ |
+|---|---|---|
+| Master Data | materials, products, suppliers, customers, warehouses, categories | ✅ |
+| Procurement | purchase orders, goods receipts | ✅ |
+| WMS | inventory balances, transactions, stock count | ✅ |
+| Production | production orders CRUD, status, search, detail view | ✅ |
+| QMS | quality inspections | ✅ |
+| Maintenance | maintenance requests | ✅ |
+| HR/Shift | employees, shifts, schedules, attendance, leave, payroll | ✅ |
+| Sales | quotations, sales orders, delivery notes | ✅ |
+| Finance | invoices, receipts, accounts, journal entries, payables, receivables, payments | ✅ |
+| Analytics | production KPIs, financial reports | ✅ |
+| Approvals | document approval workflow | ✅ |
+| Audit | audit logs | ✅ |
+| UI | top menubar, full-width, footer, collapsible | ✅ |
+
+
+## ไดอะแกรมการทำงาน
+
+Sales Order → Planning/MRP → Purchase Order → Receive → QC → Release to Inventory → Scheduling → Work Order → Issue Materials → Routing → Output/Scrap → Final QC → FG Warehouse → Delivery → Finance/Costing → Analytics
+
+
+FSSS — Factory Management System
 
 
 
@@ -89,23 +115,3 @@ npm run build && npm start
 - **API routes** — RESTful API design
 
 ## การพัฒนาเพิ่มเติม
-
-
-
-## สรุปฟีเจอร์
-
-| โมดูล | ฟีเจอร์ | สถานะ |
-|---|---|---|
-| Master Data | materials, products, suppliers, customers, warehouses, categories | ✅ |
-| Procurement | purchase orders, goods receipts | ✅ |
-| WMS | inventory balances, transactions, stock count | ✅ |
-| Production | production orders CRUD, status, search, detail view | ✅ |
-| QMS | quality inspections | ✅ |
-| Maintenance | maintenance requests | ✅ |
-| HR/Shift | employees, shifts, schedules, attendance, leave, payroll | ✅ |
-| Sales | quotations, sales orders, delivery notes | ✅ |
-| Finance | invoices, receipts, accounts, journal entries, payables, receivables, payments | ✅ |
-| Analytics | production KPIs, financial reports | ✅ |
-| Approvals | document approval workflow | ✅ |
-| Audit | audit logs | ✅ |
-| UI | top menubar, full-width, footer, collapsible | ✅ |
