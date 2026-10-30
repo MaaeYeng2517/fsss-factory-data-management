@@ -16,7 +16,7 @@
 1. **จัดการพนักงาน (Employees)** — กำหนดข้อมูลพนักงาน แผนก ตำแหน่ง อัตราค่าจ้าง และสถานะ
 2. **ตาราง.shift (Schedules)** — จัดพนักงานลงกะรายสัปดาห์ พร้อมแสดงเป็นตารางสี
 3. **จัดการ-shift (Shifts)** — กำหนดรูปแบบ shift (เช้า/บ่าย/กลางคืน) เวลาเริ่ม-จบ และBreak time
-4. **แลก-shift (Shift Swaps)** — ระบบที่允许พนักงานขอแลก shift กับเพื่อน พร้อมapprovals
+4. **แลก-shift (Shift Swaps)** — ระบบพนักงานขอแลก shift กับเพื่อน พร้อมapprovals
 5. **ค่าตอบแทน (Payroll)** — คำนวณเงินเดือนตามชั่วโมงจริง OT และ bonuses/deductions
 6. **การเข้า-ออก (Attendance)** — บันทึกการ clock-in/out และชั่วโมงทำงาน
 7. **การลาก (Leave Requests)** —  management of leave requests and leave types
@@ -90,4 +90,4 @@ npm run build && npm start
 
 ## การพัฒนาเพิ่มเติม
 
-ดู docs/fss.md สำหรับรายละเอียดเพิ่มเติม# fsss-factory-data-management
+
