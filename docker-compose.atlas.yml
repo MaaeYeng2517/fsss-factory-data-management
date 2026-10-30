@@ -1,0 +1,3 @@
+# MongoDB Atlas is a managed cloud service; no local container.
+# Use connection string in .env: MONGODB_URI="mongodb+srv://..."
+services: {}

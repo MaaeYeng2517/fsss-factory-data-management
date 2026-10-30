@@ -1,0 +1,6 @@
+import { NextResponse } from 'next/server';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+export async function GET(_: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; const s = await prisma.supplier.findUnique({ where: { id: id } }); return s ? NextResponse.json({ data: s }) : NextResponse.json({ error: 'not found' }, { status: 404 }); }
+export async function PUT(req: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; const body = await req.json(); const s = await prisma.supplier.update({ where: { id: id }, data: { code: body.code, name: body.name, phone: body.phone, email: body.email, address: body.address } }); await prisma.auditLog.create({ data: { action: 'UPDATE', entity: 'Supplier', entityId: s.id, newValues: JSON.stringify(body) } }); return NextResponse.json({ data: s }); }
+export async function DELETE(_: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; await prisma.supplier.delete({ where: { id: id } }); await prisma.auditLog.create({ data: { action: 'DELETE', entity: 'Supplier', entityId: id } }); return NextResponse.json({ ok: true }); }

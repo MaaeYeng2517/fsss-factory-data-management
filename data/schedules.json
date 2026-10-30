@@ -1,0 +1,14 @@
+[
+  { "id": "sch-001", "employeeId": "emp-001", "shiftId": "s1", "date": "2026-10-29", "note": "uty" },
+  { "id": "sch-002", "employeeId": "emp-002", "shiftId": "s1", "date": "2026-10-29", "note": "" },
+  { "id": "sch-003", "employeeId": "emp-003", "shiftId": "s2", "date": "2026-10-29", "note": "" },
+  { "id": "sch-004", "employeeId": "emp-004", "shiftId": "s2", "date": "2026-10-29", "note": "" },
+  { "id": "sch-005", "employeeId": "emp-005", "shiftId": "s3", "date": "2026-10-29", "note": "" },
+  { "id": "sch-006", "employeeId": "emp-006", "shiftId": "s3", "date": "2026-10-29", "note": "" },
+  { "id": "sch-007", "employeeId": "emp-001", "shiftId": "s2", "date": "2026-10-30", "note": "" },
+  { "id": "sch-008", "employeeId": "emp-002", "shiftId": "s2", "date": "2026-10-30", "note": "" },
+  { "id": "sch-009", "employeeId": "emp-003", "shiftId": "s1", "date": "2026-10-30", "note": "" },
+  { "id": "sch-010", "employeeId": "emp-004", "shiftId": "s1", "date": "2026-10-30", "note": "" },
+  { "id": "sch-011", "employeeId": "emp-005", "shiftId": "s3", "date": "2026-10-30", "note": "" },
+  { "id": "sch-012", "employeeId": "emp-006", "shiftId": "s3", "date": "2026-10-30", "note": "" }
+]

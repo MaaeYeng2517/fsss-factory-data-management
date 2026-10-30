@@ -1,0 +1,26 @@
+[
+  {
+    "id": "s1",
+    "name": "เช้า",
+    "startTime": "08:00",
+    "endTime": "16:00",
+    "breakMinutes": 60,
+    "color": "#3b82f6"
+  },
+  {
+    "id": "s2",
+    "name": "บ่าย",
+    "startTime": "16:00",
+    "endTime": "00:00",
+    "breakMinutes": 60,
+    "color": "#f59e0b"
+  },
+  {
+    "id": "s3",
+    "name": "กลางคืน",
+    "startTime": "00:00",
+    "endTime": "08:00",
+    "breakMinutes": 60,
+    "color": "#8b5cf6"
+  }
+]

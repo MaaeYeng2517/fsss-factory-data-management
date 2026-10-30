@@ -1,0 +1,35 @@
+services:
+  mms-mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: mms
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+    restart: unless-stopped
+  mms-redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379"
+    restart: unless-stopped
+  mms-prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9091:9090"
+    restart: unless-stopped
+  mms-grafana:
+    image: grafana/grafana:latest
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    ports:
+      - "3003:3000"
+    restart: unless-stopped
+  mms-nginx:
+    image: nginx:alpine
+    ports:
+      - "8083:80"
+    restart: unless-stopped
+volumes:
+  mysqldata:

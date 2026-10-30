@@ -1,0 +1,12 @@
+services:
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3002:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafanadata:/var/lib/grafana
+    restart: unless-stopped
+volumes:
+  grafanadata:

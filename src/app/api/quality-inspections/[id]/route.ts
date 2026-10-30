@@ -1,0 +1,6 @@
+import { NextResponse } from 'next/server';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+export async function GET(_: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; const q = await prisma.qualityInspection.findUnique({ where: { id: id } }); return q ? NextResponse.json({ data: q }) : NextResponse.json({ error: 'not found' }, { status: 404 }); }
+export async function PUT(req: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; const body = await req.json(); const q = await prisma.qualityInspection.update({ where: { id: id }, data: { status: body.status, notes: body.notes } }); await prisma.auditLog.create({ data: { action: 'UPDATE', entity: 'QualityInspection', entityId: q.id, newValues: JSON.stringify(body) } }); return NextResponse.json({ data: q }); }
+export async function DELETE(_: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; await prisma.qualityInspection.delete({ where: { id: id } }); await prisma.auditLog.create({ data: { action: 'DELETE', entity: 'QualityInspection', entityId: id } }); return NextResponse.json({ ok: true }); }

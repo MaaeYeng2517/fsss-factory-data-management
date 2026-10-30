@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manufacturing Documents</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header {
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+  }
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  header p { font-size: 1.1em; opacity: 0.9; }
+  .category {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+  }
+  .category-header {
+    padding: 20px 25px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .cat-planning { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+  .cat-material { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+  .cat-process { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+  .cat-quality { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+  .category-body { padding: 20px 25px; }
+  .doc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .doc-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .doc-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    flex-shrink: 0;
+  }
+  .doc-content { flex: 1; }
+  .doc-name {
+    font-weight: bold;
+    font-size: 1.05em;
+    color: #2c3e50;
+    margin-bottom: 4px;
+  }
+  .doc-desc {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    opacity: 0.8;
+    font-size: 0.9em;
+  }
+  @media (max-width: 768px) {
+    header h1 { font-size: 1.8em; }
+    .category-header { font-size: 1.2em; }
+    .doc-item { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Manufacturing Documents</h1>
+    <p>แผนที่ documents การผลิต &amp; การจัดการวัตถุดิบ &amp; กระบวนการผลิต &amp; คุณภาพ</p>
+  </header>
+
+  <!-- 1. Planning & Ordering -->
+  <div class="category">
+    <div class="category-header cat-planning">
+      <span style="font-size:1.5em;">1</span>
+      แผนการแผนการและสั่งการผลิต (Planning &amp; Ordering)
+    </div>
+    <div class="category-body">
+      <div class="doc-item">
+        <div class="doc-icon" style="background:#667eea20;">&#x1F4CA;</div>
+        <div class="doc-content">
+          <div class="doc-name">แผนการผลิต (Production Plan)</div>
+          <div class="doc-desc">แผนระยะสั้นและระยะยาวที่กำหนดเป้าหมายปริมาณสินค้าที่ต้องผลิตในแต่ละช่วงเวลา</div>
+        </div>
+      </div>
+      <div class="doc-item">
+        <div class="doc-icon" style="background:#667eea20;">&#x1F4C5;</div>
+        <div class="doc-content">
+          <div class="doc-name">

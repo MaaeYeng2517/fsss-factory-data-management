@@ -1,0 +1,41 @@
+[
+  {
+    "id": "swap-001",
+    "requesterId": "emp-003",
+    "receiverId": "emp-004",
+    "fromScheduleId": "sch-003",
+    "toScheduleId": null,
+    "desiredDate": "2026-10-30",
+    "reason": "มีธุระ-family ต้องการแลกับเพื่อน",
+    "status": "pending",
+    "createdAt": "2026-10-29T08:00:00.000Z",
+    "reviewedAt": null,
+    "reviewerId": null
+  },
+  {
+    "id": "swap-002",
+    "requesterId": "emp-005",
+    "receiverId": "emp-006",
+    "fromScheduleId": "sch-005",
+    "toScheduleId": "sch-006",
+    "desiredDate": "2026-10-29",
+    "reason": "อยากได้กะกลางคืนเป็นเพื่อนที่รับแลก",
+    "status": "approved",
+    "createdAt": "2026-10-28T14:30:00.000Z",
+    "reviewedAt": "2026-10-28T15:00:00.000Z",
+    "reviewerId": "emp-002"
+  },
+  {
+    "id": "swap-003",
+    "requesterId": "emp-001",
+    "receiverId": null,
+    "fromScheduleId": "sch-007",
+    "toScheduleId": null,
+    "desiredDate": "2026-10-30",
+    "reason": "อยากเปลี่ยนจากกะบ่าย",
+    "status": "rejected",
+    "createdAt": "2026-10-27T09:00:00.000Z",
+    "reviewedAt": "2026-10-27T10:00:00.000Z",
+    "reviewerId": "emp-002"
+  }
+]
