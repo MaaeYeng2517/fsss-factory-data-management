@@ -132,3 +132,6 @@ npm run build && npm start
 - **API routes** — RESTful API design
 
 ## การพัฒนาเพิ่มเติม
+
+## License
+MIT
