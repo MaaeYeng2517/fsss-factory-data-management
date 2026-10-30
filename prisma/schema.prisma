@@ -1089,3 +1089,14 @@ model Approval {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 }
+
+model InternalAudit {
+  id        String   @id @default(cuid())
+  title     String
+  scope     String?
+  status    String   @default("planned")
+  auditor   String?
+  findings  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
