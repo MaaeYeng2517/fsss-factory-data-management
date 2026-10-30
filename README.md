@@ -80,7 +80,7 @@ npm run build && npm start
 | `/raw-materials/stock-count` | นับ stock |
 | `/raw-materials/warehouses` | คลัง |
 
-## การ设计ที่สำคัญ
+## การที่สำคัญ
 
 - **Dark/Light Mode** — Dark mode support
 - **Responsive** — tablet และ mobile friendly
