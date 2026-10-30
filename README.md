@@ -91,3 +91,21 @@ npm run build && npm start
 ## การพัฒนาเพิ่มเติม
 
 
+
+## สรุปฟีเจอร์
+
+| โมดูล | ฟีเจอร์ | สถานะ |
+|---|---|---|
+| Master Data | materials, products, suppliers, customers, warehouses, categories | ✅ |
+| Procurement | purchase orders, goods receipts | ✅ |
+| WMS | inventory balances, transactions, stock count | ✅ |
+| Production | production orders CRUD, status, search, detail view | ✅ |
+| QMS | quality inspections | ✅ |
+| Maintenance | maintenance requests | ✅ |
+| HR/Shift | employees, shifts, schedules, attendance, leave, payroll | ✅ |
+| Sales | quotations, sales orders, delivery notes | ✅ |
+| Finance | invoices, receipts, accounts, journal entries, payables, receivables, payments | ✅ |
+| Analytics | production KPIs, financial reports | ✅ |
+| Approvals | document approval workflow | ✅ |
+| Audit | audit logs | ✅ |
+| UI | top menubar, full-width, footer, collapsible | ✅ |
